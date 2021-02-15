@@ -57,6 +57,7 @@ const createBrowserWindow = (webPreferences, parentWindow) => {
     height: parentBounds ? parentBounds.height : 900,
     x: parentBounds ? (parentBounds.x + 25) : undefined,
     y: parentBounds ? (parentBounds.y + 25) : undefined,
+    transparent: false,
     webPreferences: webPreferences
   });
 

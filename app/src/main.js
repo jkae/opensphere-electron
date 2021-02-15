@@ -86,6 +86,7 @@ const createMainWindow = () => {
 const maxMemory = getMaximumMemory();
 log.info('Setting applications maximum memory to ' + maxMemory + ' MB.');
 app.commandLine.appendSwitch('js-flags', '--max-old-space-size=' + maxMemory);
+app.disableHardwareAcceleration();
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
